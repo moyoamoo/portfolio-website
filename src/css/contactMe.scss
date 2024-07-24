@@ -1,0 +1,52 @@
+
+.contact-me-section{
+  margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 90%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    color: #f5722c;
+    font-size: 2rem;
+
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen  and (min-width: 600px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen  and (min-width: 800px){
+    form{
+        width: 50%;
+    }
+}
+
+
+
+@media screen  and (min-width: 800px){
+    form{
+        width: 50%;
+    }
+}

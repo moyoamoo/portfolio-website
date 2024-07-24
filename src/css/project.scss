@@ -1,0 +1,162 @@
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa0fa;
+}
+
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  margin-top: 10rem;
+  width: 100%;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.project {
+  border-left: 10px solid #ff6600;
+  border-right: 10px solid #ff6600;
+  position: relative;
+  width: 90%;
+
+  p {
+    color: #7c7c6f;
+    font-size: 1rem;
+  }
+}
+
+.project-wrapper {
+  display: block;
+  color: #ff6600;
+  padding: 40px;
+  margin: -10px 0;
+  border-top: 10px solid #ff6600;
+  border-bottom: 10px solid #ff6600;
+}
+
+.project::before,
+.project::after,
+.project .project-wrapper::before,
+.project .project-wrapper::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: #ff6600;
+}
+.project::before {
+  top: -5px;
+  left: -5px;
+}
+.project::after {
+  top: -5px;
+  right: -5px;
+}
+.project .project-wrapper::before {
+  bottom: -5px;
+  left: -5px;
+}
+.project .project-wrapper::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  span {
+    padding: 0.5rem;
+    border: 4px solid #000;
+    box-shadow: 3px 7px;
+    background-color: #f26419;
+    color: #fda3f9;
+    font-size: 1rem;
+  }
+}
+
+.view-project {
+  margin-top: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #f26419;
+
+  svg {
+    width: 20px;
+    margin-top: 3px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li a:hover {
+    color: #ffa0fa;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  .project-container {
+    margin-top: 10rem;
+  }
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem;
+  }
+  .project {
+    width: 50%;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .skills {
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .view-project {
+    font-size: 2rem;
+
+    svg {
+      width: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+    width: 30%;
+  }
+}
