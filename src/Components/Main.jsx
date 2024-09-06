@@ -1,3 +1,4 @@
+import About from "./About";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 
@@ -9,7 +10,9 @@ const Main = () => {
       <main>
         <AboutMe />
         <Projects />
+        {/* <About/> */}
         <ContactMe />
+        
       </main>
     </>
   );

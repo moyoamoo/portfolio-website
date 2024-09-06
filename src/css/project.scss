@@ -24,6 +24,17 @@ h4 {
   margin-top: 5rem;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+}
+.subheading {
+  color: #fec5fb;
+}
 .project {
   border-left: 10px solid #ff6600;
   border-right: 10px solid #ff6600;
@@ -83,7 +94,7 @@ h4 {
     border: 4px solid #000;
     box-shadow: 3px 7px;
     background-color: #f26419;
-    color: #fda3f9;
+    color: #ffd5c1;
     font-size: 1rem;
   }
 }
@@ -96,11 +107,6 @@ h4 {
   font-size: 1.2rem;
   color: #f26419;
 
-  svg {
-    width: 20px;
-    margin-top: 3px;
-  }
-
   li {
     display: flex;
     align-items: center;
@@ -108,7 +114,7 @@ h4 {
   }
 
   li a:hover {
-    color: #ffa0fa;
+    color: #ffd5c1;
     text-decoration: none;
   }
 }
@@ -125,29 +131,29 @@ h4 {
   .project-container {
     margin-top: 10rem;
   }
-  .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    padding: 1rem;
-  }
+  // .projects {
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: baseline;
+  //   padding: 1rem;
+  // }
   .project {
-    width: 50%;
+    width: 70%;
 
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 
   .skills {
     span {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
 
   .view-project {
-    font-size: 2rem;
+    font-size: 1.54rem;
 
     svg {
       width: 35px;
@@ -157,6 +163,47 @@ h4 {
 
 @media screen and (min-width: 1000px) {
   .project {
+    width: 40%;
+  }
+  .project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
     width: 30%;
+    margin: 1rem;
+  }
+
+  .skills {
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project {
+    // width: 60%;
+    margin: 1rem;
+  }
+
+  .project-container {
+    justify-items: center;
+  }
+
+  .skills {
+    span {
+      font-size: 1.6rem;
+    }
   }
 }

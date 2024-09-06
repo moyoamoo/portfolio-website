@@ -1,18 +1,28 @@
 export const projects = [
   {
     title: "Podcast Player",
-    description: "Podcast Player with custom audio player, allows users to create an account to save favorite podcasts and view their personal usage",
-    skills: ["HTML", "SCSS/CSS", "React.js", "Redux", "Express.js", "MySQL"],
+    description:
+      "Podcast Player with custom audio player. Users can search and play podcasts. Creating account allows you subscribe to your favourite podcasts and view your podcasts usage (favourite genre, top listened and recent searches)",
+    skills: [
+      "HTML",
+      "SCSS/CSS",
+      "React.js",
+      "Redux",
+      "REST and GraphQL",
+      "TypeScript",
+      "Express.js",
+      "MySQL",
+    ],
     linkName: [
       {
-        name: "Frontend Repo",
+        name: "Frontend Github",
         link: "https://github.com/moyoamoo/typescript-podcast-player",
       },
       {
-        name: "Backend Redo",
+        name: "Backend Github",
         link: "https://github.com/moyoamoo/backend-podcast-player",
       },
-      { name: "Website", link: "https://podlaunch.co.uk" },
+      { name: "Project", link: "https://podlaunch.co.uk" },
     ],
     subHeading: "Fullstack",
     images: [
@@ -29,7 +39,7 @@ export const projects = [
     skills: ["HTML", "SCSS/CSS", "JavaScript"],
     linkName: [
       { name: "Github", link: "https://github.com/moyoamoo/weatherapp" },
-      { name: "Website", link: "https://splendid-chebakia-57b70e.netlify.app" },
+      { name: "Project", link: "https://splendid-chebakia-57b70e.netlify.app" },
     ],
     images: [
       "../images/weather_app_1.png",
@@ -37,44 +47,5 @@ export const projects = [
       "../images/weather_app_3.png",
     ],
     subHeading: "Frontend",
-  },
-
-  {
-    title: "Hackathon: Star Wars Top Trumps",
-    description: "Participated in The Jump Hackathon",
-    skills: ["HTML", "SCSS/CSS", "React.js"],
-    linkName: [
-      { name: "Github", link: "https://github.com/moyoamoo/weatherapp" },
-      { name: "Website", link: "https://splendid-chebakia-57b70e.netlify.app" },
-    ],
-    subHeading: "Frontend",
-    images: [
-      "../assets/images/weather_app_1",
-      "../assets/images/weather_app_2",
-      "../assets/images/weather_app_3",
-    ],
-  },
-
-  {
-    title: "URL Shortner",
-    description: "Generates a unique short hash to make short urls for websites",
-    skills: ["HTML", "SCSS/CSS", "React.js", "Redux", "Express.js", "MySQL"],
-    linkName: [
-      {
-        name: "Frontend Repo",
-        link: "https://https://github.com/moyoamoo/url-shortner",
-      },
-      {
-        name: "Backend Repo",
-        link: "https://github.com/moyoamoo/url-shortner-backend",
-      },
-      { name: "Website", link: "https://splendid-chebakia-57b70e.netlify.app" },
-    ],
-    subHeading: "Fullstack",
-    images: [
-      "../assets/images/weather_app_1",
-      "../assets/images/weather_app_2",
-      "../assets/images/weather_app_3",
-    ],
   },
 ];
